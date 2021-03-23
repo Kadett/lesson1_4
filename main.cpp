@@ -21,8 +21,9 @@ void oddList() {
     const int SIZE = 50;
     cout << "Your odd numbers: ";
     for (int i = 1; i <= SIZE; ++i) {
-        if (i%2) cout << i << " ";
+        if (i % 2) cout << i << " ";
     }
+    cout << '\n';
 }
 
 // Task 4
@@ -57,7 +58,17 @@ int main() {
     isPrimeNumber(53);
 
     // Task 5
-    isLeapYear(2021);
+    int year;
+    cout << "Enter year:\n";
+    cin >> year;
+    if (isLeapYear(year))
+    {
+        cout << "Year is leap" ;
+    }
+    else
+    {
+        cout << "Not a leap year" ;
+    }
 
     return 0;
 }
